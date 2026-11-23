@@ -29,6 +29,7 @@ python main.py
 | `game.py` | Класс `Game`: экраны, игровой цикл, очки, победа и поражение |
 | `sprites.py` | Классы `Player` (главный персонаж), `FallingObject`, `Star`, `GoldStar`, `Bomb` |
 | `database.py` | Класс `Database`: работа с SQLite (сохранение результата и топ-5) |
+| `logger.py` | Класс `DbLogger`: журнал всех обращений к базе в файле `db_log.txt` |
 | `settings.py` | Константы: размеры окна, цвета, правила |
 
 ## Соответствие требованиям
@@ -41,5 +42,6 @@ python main.py
 | Можно выиграть и проиграть | `Game.update()`: 30 очков дают победу, 0 жизней дают поражение |
 | Топ-5 после игры | `Game.finish()` и `Game.draw_game_over()` |
 | SQLite3 | Класс `Database` в `database.py` |
-| ООП | Классы `Player`, `FallingObject` и его наследники, `Database`, `Game` |
+| ООП | Классы `Player`, `FallingObject` и его наследники, `Database`, `DbLogger`, `Game` |
+| Логи взаимодействия с БД | Класс `DbLogger`: каждое действие с базой пишется в `db_log.txt` и в консоль |
 | Подсказки по ходу игры | Экран правил, подсказки управления на экране, всплывающие сообщения |

@@ -3,3 +3,4 @@ __pycache__/
 records.db
 .venv/
 venv/
+db_log.txt
